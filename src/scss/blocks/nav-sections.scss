@@ -1,0 +1,30 @@
+.nav-sections {
+  flex-grow: 1;
+}
+
+.nav-sections__list {
+  @include reset-list;
+  display: flex;
+}
+
+.nav-sections__item {
+  flex-grow: 1;
+  border-right: 1px solid #8abee7;
+}
+
+.nav-sections__link {
+  @include reset-link;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}

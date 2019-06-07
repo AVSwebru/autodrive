@@ -1,0 +1,27 @@
+.btn {
+  @include reset-btn;
+  @include reset-link;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  &_action {
+    padding: 11px 28px 10px;
+    color: #fff;
+    background-color: #f91c1e;
+  }
+  &_card {
+    padding: 12px 18px;
+    background-color: #ffd703;
+    color: #190c1a;
+  }
+  &_link {
+    padding: 11px 20px 12px;
+    background-color: #1f1f1f;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

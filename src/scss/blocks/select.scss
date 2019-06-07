@@ -1,0 +1,32 @@
+.select {
+  &_small {
+    .select__input {
+      width: 117px;
+    }
+  }
+  &_medium {
+    .select__input {
+      width: 180px;
+    }
+  }
+  &_large {
+    .select__input {
+      width: 265px;
+    }
+  }
+}
+
+.select__label {
+  margin-bottom: 10px;
+}
+
+.select__input {
+  height: 35px;
+  box-sizing: border-box;
+  padding: 0 20px 0 10px;
+  border: 1px solid #cacaca;
+  background-color: transparent;
+  color: #717171;
+  font-size: 16px;
+  background: url('../img/chevron-down.svg') no-repeat calc(100% - 15px) 50%;
+}

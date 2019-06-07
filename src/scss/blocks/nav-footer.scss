@@ -1,0 +1,32 @@
+.nav-footer {
+}
+
+.nav-footer__list {
+  @include reset-list;
+  display: flex;
+  margin: 0 -15px;
+}
+
+.nav-footer__item {
+  margin: 0 15px;
+}
+
+.nav-footer__link {
+  @include reset-link;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
+  &:hover {
+    color: #fff;
+  }
+}

@@ -1,0 +1,75 @@
+.filter {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 35px 55px 75px 40px;
+  background: #e8e8e8 url('../img/bg-filter.jpg') no-repeat 50% 50% / cover;
+  &_tires {
+    .filter__title {
+      margin-bottom: 30px;
+    }
+  }
+  &_discs {
+    .filter__title {
+      margin-bottom: 80px;
+    }
+  }
+  &:first-of-type {
+    background-color: #e8e8e8;
+    background-image: linear-gradient(to right, transparent 0%, #e5e5e5),
+      url('../img/bg-filter.jpg');
+    background-position: 100% 0, 50% 50%;
+    background-size: 20px 100%, cover;
+  }
+}
+
+.filter__title {
+  text-align: center;
+  color: #2c231a;
+  font-family: $font-decor;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.filter__season-types {
+  display: flex;
+  margin: 0 -20px 35px;
+}
+
+.filter__checkbox-input {
+  @include hidden-input;
+  &:checked + .filter__checkbox-text .filter__checkbox-icon {
+    opacity: 1;
+  }
+}
+
+.filter__checkbox {
+  margin: 0 20px;
+}
+
+.filter__checkbox-text {
+  display: flex;
+}
+
+.filter__checkbox-icon {
+  opacity: 0;
+  color: #f91c1e;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.filter__row {
+  display: flex;
+  & > * {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.filter__submit {
+  margin-top: 25px;
+}

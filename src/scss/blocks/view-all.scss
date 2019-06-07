@@ -1,0 +1,19 @@
+.view-all {
+  @include reset-link;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #328dd5;
+  font-size: 14px;
+  line-height: 1;
+  &:hover {
+    color: #328dd5;
+  }
+}
+
+.view-all__icon {
+  width: 7px;
+  height: 10px;
+  fill: #328dd5;
+  margin-left: 5px;
+}

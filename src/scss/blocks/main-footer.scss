@@ -1,0 +1,47 @@
+.main-footer {
+  margin-top: 190px;
+  padding: 55px 0 35px;
+  background-color: #000;
+}
+
+.main-footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main-footer__top-rightside {
+  display: flex;
+}
+
+.main-footer__contacts-block {
+  margin-right: 75px;
+}
+
+.main-footer__policy {
+  @include reset-list;
+}
+
+.main-footer__policy-item {
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+.main-footer__policy-link {
+  @include reset-link;
+  color: #a2a2a2;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.main-footer__devs-logo {
+  width: 122px;
+  height: 40px;
+}
+
+.main-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}

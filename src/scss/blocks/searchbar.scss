@@ -1,0 +1,35 @@
+.searchbar {
+  width: 250px;
+  position: relative;
+}
+
+.searchbar__input {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px 0 30px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  &::placeholder {
+    text-align: right;
+    color: #8abee7;
+    font-size: 16px;
+  }
+}
+
+.searchbar__submit {
+  @include reset-btn;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translatey(-50%);
+}
+
+.searchbar__submit-icon {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}

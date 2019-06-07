@@ -1,0 +1,38 @@
+.contacts-block {
+  &_header {
+    .contacts-block__tel {
+      color: #2c231a;
+    }
+    .contacts-block__social-link {
+      color: #858585;
+    }
+  }
+  &_footer {
+    .contacts-block__tel {
+      color: #a2a2a2;
+    }
+    .contacts-block__social-link {
+      color: #585858;
+    }
+  }
+}
+
+.contacts-block__tel {
+  @include reset-link;
+  margin-bottom: 5px;
+  background: url('../img/phone.svg') no-repeat 0 50% / 20px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.contacts-block__social {
+  text-align: right;
+}
+
+.contacts-block__social-link {
+  @include reset-link;
+  color: #858585;
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.card {
+  padding: 20px 15px;
+  border: 1px solid #e6e6e6;
+}
+
+.card__img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 265px;
+  margin-bottom: 15px;
+}
+
+.card__season-type {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.card__title {
+  margin: 0 0 20px 0;
+  color: #2c231a;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card__price {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}

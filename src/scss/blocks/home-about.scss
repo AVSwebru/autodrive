@@ -1,0 +1,24 @@
+.home-about {
+  display: flex;
+  p {
+    line-height: 1.4;
+  }
+}
+
+.home-about__section-title {
+  margin-bottom: 40px;
+}
+
+.home-about__leftside {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.home-about__leftside {
+  width: 310px;
+  min-width: 310px;
+}
+
+.home-about__link {
+  margin-top: 20px;
+}
