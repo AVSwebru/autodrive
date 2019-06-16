@@ -1,0 +1,55 @@
+.cart-variant {
+  width: calc(50% - 10px);
+  min-height: 180px;
+  box-sizing: border-box;
+  margin: 5px;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  @media (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
+}
+
+.cart-variant__input {
+  @include hidden-input;
+  &:checked + .cart-variant__label {
+    background: #e3f1fc
+      url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 11' id='check'%3E%3Cpath fill-rule='evenodd' fill='rgb(249, 28, 30)' d='M14.931,1.636 L5.634,10.932 C5.552,11.015 5.419,11.015 5.338,10.932 L0.059,5.653 C-0.023,5.572 -0.023,5.439 0.059,5.358 L1.342,4.076 C1.423,3.993 1.556,3.993 1.638,4.076 L5.486,7.923 L13.353,0.058 C13.434,-0.025 13.567,-0.025 13.649,0.058 L14.931,1.340 C15.013,1.422 15.013,1.554 14.931,1.636 L14.931,1.636 Z'/%3E%3C/svg%3E")
+      no-repeat 25px 35px / 15px 11px;
+    & .cart-variant__check-icon {
+      display: block;
+    }
+  }
+  &:focus + .cart-variant__label {
+    box-shadow: 0 0 5px 5px $theme-color;
+  }
+}
+
+.cart-variant__label {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 35px 20px 35px 48px;
+}
+
+.cart-variant__title {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cart-variant__text {
+  max-width: 430px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.cart-variant__price {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart__delivery {
+  margin-bottom: 75px;
+}

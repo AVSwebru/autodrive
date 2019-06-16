@@ -5,6 +5,25 @@
     }
     .contacts-block__social-link {
       color: #858585;
+      &:hover {
+        color: #2c231a;
+      }
+    }
+    @media (max-width: $breakpoint-small) {
+      margin-bottom: 30px;
+      .contacts-block__tel {
+        color: #fff;
+      }
+      .contacts-block__social-link {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .contacts-block__social {
+        text-align: left;
+        color: #fff;
+      }
     }
   }
   &_footer {
@@ -13,15 +32,22 @@
     }
     .contacts-block__social-link {
       color: #585858;
+      &:hover {
+        color: #fff;
+      }
+    }
+    @media (max-width: $breakpoint-small) {
+      text-align: left;
     }
   }
 }
 
 .contacts-block__tel {
   @include reset-link;
+  display: inline-block;
   margin-bottom: 5px;
   background: url('../img/phone.svg') no-repeat 0 50% / 20px 20px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
@@ -34,5 +60,6 @@
 .contacts-block__social-link {
   @include reset-link;
   color: #858585;
+  font-size: 14px;
   font-weight: 500;
 }

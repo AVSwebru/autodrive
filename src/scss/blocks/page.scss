@@ -1,0 +1,8 @@
+.page {
+  &.menu-is-opened {
+    overflow: hidden;
+    .menu-adapt {
+      display: block;
+    }
+  }
+}

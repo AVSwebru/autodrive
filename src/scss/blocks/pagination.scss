@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -20px;
+  li {
+    margin-bottom: 20px;
+    &.uk-active {
+      a {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 3px;
+          background-color: #328dd5;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-medium) {
+    justify-content: center;
+  }
+}

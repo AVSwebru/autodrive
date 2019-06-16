@@ -1,16 +1,31 @@
+.nav-main {
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 30px;
+  }
+}
+
 .nav-main__list {
   @include reset-list;
   display: flex;
-  margin: 0 -10px;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    margin: 0 0 -20px;
+  }
 }
 
 .nav-main__item {
-  margin: 0 10px;
+  margin: 0 8px;
+  @media (max-width: $breakpoint-small) {
+    margin: 0 0 20px;
+  }
 }
 
 .nav-main__link {
   @include reset-link;
   position: relative;
+  white-space: nowrap;
   color: #2c231a;
   font-size: 16px;
   line-height: 1;
@@ -22,8 +37,21 @@
     width: 100%;
     height: 1px;
     background-color: #76726e;
+    @media (max-width: $breakpoint-small) {
+      display: none;
+    }
   }
   &:hover {
-    color: #2c231a;
+    color: #f91c1e;
+    &::before {
+      background-color: #f91c1e;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    color: #fff;
+    font-size: 20px;
+    &:hover {
+      color: #fff;
+    }
   }
 }

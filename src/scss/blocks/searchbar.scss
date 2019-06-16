@@ -6,7 +6,7 @@
 .searchbar__input {
   width: 100%;
   height: 40px;
-  padding: 0 20px 0 30px;
+  padding: 0 20px 0 35px;
   border: none;
   background: transparent;
   color: #fff;
@@ -16,6 +16,9 @@
     color: #8abee7;
     font-size: 16px;
   }
+  @media (max-width: $breakpoint-small) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 .searchbar__submit {
@@ -24,8 +27,11 @@
   height: 30px;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 4px;
   transform: translatey(-50%);
+  &:focus {
+    box-shadow: 0 0 3px 3px #fff;
+  }
 }
 
 .searchbar__submit-icon {

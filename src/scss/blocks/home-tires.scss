@@ -1,12 +1,20 @@
 .home-tires {
   display: flex;
   margin-bottom: 50px;
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+  }
 }
 
 .home-tires__leftside {
-  width: 260px;
-  min-width: 260px;
+  width: 264px;
+  min-width: 264px;
   margin-right: 30px;
+  @media (max-width: $breakpoint-medium) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .home-tires__rightside {
@@ -14,22 +22,33 @@
 }
 
 .home-tires__section-title {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .home-tires__brand-list {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 0;
+  }
 }
 
 .home-tires__item {
   width: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
   &:nth-last-child(1),
   &:nth-last-child(2) {
     margin-bottom: 0;
+    @media (max-width: $breakpoint-medium) {
+      margin-bottom: 20px;
+    }
   }
 }
 

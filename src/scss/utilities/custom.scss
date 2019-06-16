@@ -9,12 +9,18 @@ $global-link-hover-color: #2c231a;
 
 $container-max-width: 1140px;
 
+$pagination-item-color: #2c231a;
+
+$breadcrumb-divider-margin-horizontal: 10px;
 // 2. Import default variables and available mixins.
 @import 'uikit/src/scss/variables-theme.scss';
 @import 'uikit/src/scss/mixins-theme.scss';
 
 // 3. Your custom mixin overwrites.
 
+@mixin hook-breadcrumb-item() {
+  text-decoration: underline;
+}
 // 4. Import UIkit.
 // @import "uikit/src/scss/uikit-theme.scss";
 
@@ -59,8 +65,8 @@ $container-max-width: 1140px;
 // @import "uikit/src/scss/components/nav.scss";
 // @import "uikit/src/scss/components/navbar.scss"; // After: Card, Grid, Nav, Icon, Search
 // @import "uikit/src/scss/components/subnav.scss";
-// @import "uikit/src/scss/components/breadcrumb.scss";
-// @import "uikit/src/scss/components/pagination.scss";
+@import 'uikit/src/scss/components/breadcrumb.scss';
+@import 'uikit/src/scss/components/pagination.scss';
 // @import "uikit/src/scss/components/tab.scss";
 // @import "uikit/src/scss/components/slidenav.scss"; // After: Icon
 // @import "uikit/src/scss/components/dotnav.scss";
@@ -70,7 +76,7 @@ $container-max-width: 1140px;
 // @import "uikit/src/scss/components/accordion.scss";
 // @import "uikit/src/scss/components/drop.scss"; // After: Card
 // @import "uikit/src/scss/components/dropdown.scss"; // After: Card
-// @import "uikit/src/scss/components/modal.scss"; // After: Close
+@import 'uikit/src/scss/components/modal.scss'; // After: Close
 // @import "uikit/src/scss/components/lightbox.scss"; // After: Close
 // @import "uikit/src/scss/components/slideshow.scss";
 @import 'uikit/src/scss/components/slider.scss';
@@ -102,7 +108,7 @@ $container-max-width: 1140px;
 // @import "uikit/src/scss/components/align.scss";
 // @import "uikit/src/scss/components/svg.scss";
 // @import "uikit/src/scss/components/utility.scss";
-// @import "uikit/src/scss/components/flex.scss"; // After: Utility
+@import 'uikit/src/scss/components/flex.scss'; // After: Utility
 // @import "uikit/src/scss/components/margin.scss";
 // @import "uikit/src/scss/components/padding.scss";
 // @import "uikit/src/scss/components/position.scss";

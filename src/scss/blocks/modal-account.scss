@@ -1,0 +1,57 @@
+.modal-account {
+  width: 750px;
+  padding: 50px 65px 80px 335px;
+  background: #fff url('../img/bg-modal-account.jpg') no-repeat 0 0 / 295px 100%;
+  @media (max-width: $breakpoint-medium) {
+    width: 500px;
+    padding: 50px 30px;
+    background: #fff;
+  }
+}
+
+.modal-account__title {
+  margin: 0 0 45px;
+  font-family: $font-decor;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.modal-account__row {
+  margin-bottom: 35px;
+}
+
+.modal-account__registration {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.modal-account__buttons {
+  margin-top: 45px;
+  & > *:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal-account__close-btn {
+  @include reset-btn;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    .modal-account__close-btn-icon {
+      fill: #1f1f1f;
+    }
+  }
+}
+
+.modal-account__close-btn-icon {
+  width: 18px;
+  height: 18px;
+  fill: #9f9f9f;
+}

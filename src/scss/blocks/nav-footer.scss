@@ -1,14 +1,18 @@
-.nav-footer {
-}
-
 .nav-footer__list {
   @include reset-list;
   display: flex;
-  margin: 0 -15px;
+  margin: 0 -10px;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .nav-footer__item {
-  margin: 0 15px;
+  margin: 0 10px;
+  @media (max-width: $breakpoint-small) {
+    margin: 0 0 10px;
+  }
 }
 
 .nav-footer__link {
@@ -27,6 +31,9 @@
     background-color: #fff;
   }
   &:hover {
-    color: #fff;
+    color: #f91c1e;
+    &::before {
+      background-color: #f91c1e;
+    }
   }
 }

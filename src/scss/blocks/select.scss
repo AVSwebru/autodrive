@@ -1,19 +1,25 @@
 .select {
-  &_small {
-    .select__input {
-      width: 117px;
-    }
-  }
-  &_medium {
-    .select__input {
-      width: 180px;
-    }
-  }
-  &_large {
-    .select__input {
-      width: 265px;
-    }
-  }
+  max-width: 100%;
+  // &_small {
+  //   .select__input {
+  //     width: 120px;
+  //   }
+  // }
+  // &_medium {
+  //   .select__input {
+  //     width: 180px;
+  //   }
+  // }
+  // &_large {
+  //   .select__input {
+  //     width: 265px;
+  //   }
+  // }
+  // &_fluid {
+  //   .select__input {
+  //     width: 100%;
+  //   }
+  // }
 }
 
 .select__label {
@@ -21,6 +27,7 @@
 }
 
 .select__input {
+  width: 100%;
   height: 35px;
   box-sizing: border-box;
   padding: 0 20px 0 10px;
@@ -28,5 +35,12 @@
   background-color: transparent;
   color: #717171;
   font-size: 16px;
-  background: url('../img/chevron-down.svg') no-repeat calc(100% - 15px) 50%;
+  background: url('../img/chevron-down.svg') no-repeat calc(100% - 9px) 50%;
+  cursor: pointer;
+  &:hover {
+    border-color: #328dd5;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
 }

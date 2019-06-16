@@ -1,4 +1,8 @@
 .home__filters {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 100px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 50px;
+  }
 }
