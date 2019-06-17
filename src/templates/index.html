@@ -1198,7 +1198,7 @@
                 <a class="contacts-block__social-link" href="#">Whatsapp</a>
               </div>
             </div>
-            <button class="btn btn_action">Обратная связь</button>
+            <button class="btn btn_action" data-uk-toggle="target: #modal-callback">Обратная связь</button>
           </div>
         </div>
         <div class="main-footer__bottom">
@@ -1221,12 +1221,12 @@
       </div>
     </footer>
     <div id="modal-account" data-uk-modal>
-      <div class="modal-account uk-modal-dialog uk-modal-body">
+      <div class="modal uk-modal-dialog uk-modal-body">
         <form>
-          <h2 class="modal-account__title">
+          <h2 class="modal__title">
             Вход в личный кабинет
           </h2>
-          <div class="modal-account__row">
+          <div class="modal__row">
             <label class="field">
               <div class="field__label">
                 Email
@@ -1234,7 +1234,7 @@
               <input class="field__input" type="email" required>
             </label>
           </div>
-          <div class="modal-account__row">
+          <div class="modal__row">
             <label class="field">
               <div class="field__label">
                 Пароль
@@ -1242,17 +1242,52 @@
               <input class="field__input" type="password" required>
             </label>
           </div>
-          <div class="modal-account__buttons">
+          <div class="modal__buttons">
             <button class="btn btn_default" type="submit">
               Войти
             </button>
-            <a class="modal-account__registration" href="/">
+            <a class="modal__registration" href="/">
               Регистрация
             </a>
           </div>
         </form>
-        <button class="modal-account__close-btn uk-modal-close" type="button">
-          <svg class="modal-account__close-btn-icon">
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-btn-icon">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="modal-callback" data-uk-modal>
+      <div class="modal uk-modal-dialog uk-modal-body">
+        <form>
+          <h2 class="modal__title">
+            Заказать звонок
+          </h2>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Имя
+              </div>
+              <input class="field__input" type="text" required>
+            </label>
+          </div>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Телефон
+              </div>
+              <input class="field__input" type="tel" required>
+            </label>
+          </div>
+          <div class="modal__buttons">
+            <button class="btn btn_default" type="submit">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-btn-icon">
             <use xlink:href="../img/sprite.svg#close" />
           </svg>
         </button>
