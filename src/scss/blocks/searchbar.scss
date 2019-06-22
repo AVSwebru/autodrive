@@ -1,41 +1,73 @@
 .searchbar {
-  width: 250px;
-  position: relative;
+	position: relative;
+	&_header {
+		width: 250px;
+		.searchbar__input {
+			border: none;
+			color: #fff;
+			&::placeholder {
+				text-align: right;
+				color: #8abee7;
+			}
+		}
+		.searchbar__submit {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 50%;
+			left: 4px;
+			transform: translatey(-50%);
+		}
+		.searchbar__submit-icon {
+			fill: #fff;
+		}
+	}
+	&_main {
+		display: flex;
+		width: 400px;
+		.searchbar__input {
+			border: 1px solid #2c231a;
+			color: #2c231a;
+			&::placeholder {
+				text-align: left;
+				color: #2c231a;
+			}
+		}
+		.searchbar__submit {
+			width: 40px;
+			height: 40px;
+			border-top: 1px solid #2c231a;
+			border-right: 1px solid #2c231a;
+			border-bottom: 1px solid #2c231a;
+		}
+		.searchbar__submit-icon {
+			fill: #2c231a;
+		}
+	}
 }
 
 .searchbar__input {
-  width: 100%;
-  height: 40px;
-  padding: 0 20px 0 35px;
-  border: none;
-  background: transparent;
-  color: #fff;
-  font-size: 16px;
-  &::placeholder {
-    text-align: right;
-    color: #8abee7;
-    font-size: 16px;
-  }
-  @media (max-width: $breakpoint-small) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
+	width: 100%;
+	height: 40px;
+	padding: 0 20px 0 35px;
+	background: transparent;
+	font-size: 16px;
+	&::placeholder {
+		font-size: 16px;
+	}
+	@media (max-width: $breakpoint-small) {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
 }
 
 .searchbar__submit {
-  @include reset-btn;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translatey(-50%);
-  &:focus {
-    box-shadow: 0 0 3px 3px #fff;
-  }
+	@include reset-btn;
+	&:focus {
+		box-shadow: 0 0 3px 3px #fff;
+	}
 }
 
 .searchbar__submit-icon {
-  width: 14px;
-  height: 14px;
-  fill: #fff;
+	width: 14px;
+	height: 14px;
 }

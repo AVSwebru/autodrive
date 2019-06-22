@@ -91,7 +91,7 @@
               </li>
             </ul>
           </nav>
-          <form class="searchbar js-searchbar">
+          <form class="searchbar searchbar_header js-searchbar">
             <input class="searchbar__input" type="search" placeholder="Искать по названию" aria-label="Поле поиска"
               required>
             <button class="searchbar__submit" type="submit" aria-label="Искать">
@@ -100,7 +100,7 @@
               </svg>
             </button>
           </form>
-          <div class="menu-adapt ">
+          <div class="menu-adapt">
             <div class="menu-adapt__inner js-menu-adapt"></div>
             <button class="menu-adapt__close-btn js-menu-close" type="button" aria-label="Закрыть меню">
               <svg class="menu-adapt__close-icon" viewBox="0 0 357 357">
@@ -200,40 +200,19 @@
           </div>
         </div>
         <div class="product__about">
-          <div class="product__about-tabs tabs">
-            <ul class=" tabs__list" data-uk-switcher="connect: .js-product-desc">
-              <li class="tabs__item">
-                <a class="tabs__link" href="#">Описание</a></li>
-              <li class="tabs__item">
-                <a class="tabs__link" href="#">Гарантия</a></li>
-              <li class="tabs__item">
-                <a class="tabs__link" href="#">Отзывы</a></li>
-            </ul>
-            <div class="tabs__underline"></div>
+          <div class="product__about-text">
+            <p>В основу успеха положены новейшие технологии компании Yokohama, улучшенный состав смеси, новый
+              рисунок
+              протектора.
+            <p>В результате получилась шина, превосходящая своих предшественников и ближайших конкурентов по
+              уровню
+              сцепления с сухой и мокрой дорогой, боковому скольжению, при этом, повысилась комфортность и
+              безопасность вождения.
+            <p>Сочетание спортивного характера Yokohama с комфортом и бесшумностью - это именно то, что вы ждете от добротной шины.
           </div>
-          <ul class="product__about-desc uk-switcher js-product-desc">
-            <li>
-              <div class="product__about-item">
-                <div class="product__about-text">
-                  <p>В основу успеха положены новейшие технологии компании Yokohama, улучшенный состав смеси, новый
-                    рисунок
-                    протектора.
-
-                    <p>В результате получилась шина, превосходящая своих предшественников и ближайших конкурентов по
-                      уровню
-                      сцепления с сухой и мокрой дорогой, боковому скольжению, при этом, повысилась комфортность и
-                      безопасность вождения.
-
-                      <p>Сочетание спортивного характера Yokohama с комфортом и бесшумностью - это именно то, что вы
-                        ждете от
-                        добротной шины.
-                </div>
-                <a class="product__about-banner">
-                  <img src="../img/about-banner.jpg" alt="">
-                </a>
-              </div>
-            </li>
-          </ul>
+          <a class="product__about-banner">
+            <img src="../img/about-banner.jpg" alt="">
+          </a>
         </div>
         <section class="similar-goods">
           <div class="similar-goods__title-row">
@@ -263,21 +242,10 @@
                   <div class="card__price">
                     13 500 <span class="rubl">c</span>
                   </div>
-                  <button class="btn btn_purchase" type="button">В корзину</button>
-                </div>
-              </li>
-              <li>
-                <div class="card">
-                  <a class="card__img-wrapper" href="/" tabindex="-1">
-                    <img src="../img/disc.png" alt="Шина">
-                  </a>
-                  <h3 class="card__title">
-                    <a class="card__title-link" href="/">
-                      Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
-                    </a>
-                  </h3>
-                  <div class="card__price">
-                    13 500 <span class="rubl">c</span>
+                  <div class="card__counter counter counter_product js-counter">
+                    <button class="counter__control js-counter-minus" type="button">-</button>
+                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                    <button class="counter__control js-counter-plus" type="button">+</button>
                   </div>
                   <button class="btn btn_purchase" type="button">В корзину</button>
                 </div>
@@ -295,6 +263,11 @@
                   <div class="card__price">
                     13 500 <span class="rubl">c</span>
                   </div>
+                  <div class="card__counter counter counter_product js-counter">
+                    <button class="counter__control js-counter-minus" type="button">-</button>
+                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                    <button class="counter__control js-counter-plus" type="button">+</button>
+                  </div>
                   <button class="btn btn_purchase" type="button">В корзину</button>
                 </div>
               </li>
@@ -310,6 +283,32 @@
                   </h3>
                   <div class="card__price">
                     13 500 <span class="rubl">c</span>
+                  </div>
+                  <div class="card__counter counter counter_product js-counter">
+                    <button class="counter__control js-counter-minus" type="button">-</button>
+                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                    <button class="counter__control js-counter-plus" type="button">+</button>
+                  </div>
+                  <button class="btn btn_purchase" type="button">В корзину</button>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <a class="card__img-wrapper" href="/" tabindex="-1">
+                    <img src="../img/disc.png" alt="Шина">
+                  </a>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="/">
+                      Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                    </a>
+                  </h3>
+                  <div class="card__price">
+                    13 500 <span class="rubl">c</span>
+                  </div>
+                  <div class="card__counter counter counter_product js-counter">
+                    <button class="counter__control js-counter-minus" type="button">-</button>
+                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                    <button class="counter__control js-counter-plus" type="button">+</button>
                   </div>
                   <button class="btn btn_purchase" type="button">В корзину</button>
                 </div>
