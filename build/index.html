@@ -16,7 +16,7 @@
       <div class="uk-container">
         <div class="main-header__top">
           <a class="main-header__logo" href="/" title="Интернет-магазин шин и дисков">
-            <img src="img/logo.svg?52cfe73ea1c9226e07f05fc63517fda2" alt="Интернет-магазин шин и дисков">
+            <img src="img/logo.svg?6f83757919436b3c0b968c7a59367bd4" alt="Интернет-магазин шин и дисков">
           </a>
           <nav class="nav-main js-nav-main">
             <ul class="nav-main__list">
@@ -54,12 +54,12 @@
                 </svg>
                 Корзина
               </a>
-              <a class="main-header__control" href="/">
+              <button class="main-header__control" data-uk-toggle="target: #modal-account">
                 <svg class="main-header__control-icon">
                   <use xlink:href="../img/sprite.svg#user" />
                 </svg>
                 Войти
-              </a>
+              </button>
             </div>
             <div class="main-header__store-info">
               <a class="main-header__cart-link" href="/">4 товара</a> на сумму 42 500
@@ -91,7 +91,7 @@
               </li>
             </ul>
           </nav>
-          <form class="searchbar js-searchbar">
+          <form class="searchbar searchbar_header js-searchbar">
             <input class="searchbar__input" type="search" placeholder="Искать по названию" aria-label="Поле поиска"
               required>
             <button class="searchbar__submit" type="submit" aria-label="Искать">
@@ -100,7 +100,7 @@
               </svg>
             </button>
           </form>
-          <div class="menu-adapt ">
+          <div class="menu-adapt">
             <div class="menu-adapt__inner js-menu-adapt"></div>
             <button class="menu-adapt__close-btn js-menu-close" type="button" aria-label="Закрыть меню">
               <svg class="menu-adapt__close-icon" viewBox="0 0 357 357">
@@ -115,46 +115,46 @@
     <main class="home">
       <div class="uk-container">
         <div class="home__filters">
-          <form class="filter filter_tires">
-            <h2 class="filter__title">Шины</h2>
-            <div class="filter__season-types">
-              <label class="filter__checkbox">
-                <input class="filter__checkbox-input" type="checkbox">
-                <span class="filter__checkbox-label">
-                  <span class="filter__checkbox-text">
+          <form class="home-filter home-filter_tires">
+            <h2 class="home-filter__title">Шины</h2>
+            <div class="home-filter__season-types">
+              <label class="home-filter__season-type season-type">
+                <input class="season-type__input" type="checkbox">
+                <span class="season-type__label">
+                  <span class="season-type__text">
                     Лето
                   </span>
-                  <svg class="filter__checkbox-icon">
+                  <svg class="season-type__icon">
                     <use xlink:href="../img/sprite.svg#check"></use>
                   </svg>
                 </span>
               </label>
-              <label class="filter__checkbox">
-                <input class="filter__checkbox-input" type="checkbox">
-                <span class="filter__checkbox-label">
-                  <span class="filter__checkbox-text">
+              <label class="home-filter__season-type season-type js-season-type-winter">
+                <input class="season-type__input" type="checkbox">
+                <span class="season-type__label">
+                  <span class="season-type__text">
                     Зима
                   </span>
-                  <svg class="filter__checkbox-icon">
+                  <svg class="season-type__icon">
                     <use xlink:href="../img/sprite.svg#check"></use>
                   </svg>
                 </span>
               </label>
-              <label class="filter__checkbox">
-                <input class="filter__checkbox-input" type="checkbox">
-                <span class="filter__checkbox-label">
-                  <span class="filter__checkbox-text">
+              <label class="home-filter__season-type season-type js-season-type-spikes">
+                <input class="season-type__input" type="checkbox">
+                <span class="season-type__label">
+                  <span class="season-type__text">
                     Шипы
                   </span>
-                  <svg class="filter__checkbox-icon">
+                  <svg class="season-type__icon">
                     <use xlink:href="../img/sprite.svg#check"></use>
                   </svg>
                 </span>
               </label>
             </div>
-            <div class="filter__row">
-              <div>
-                <label class="select select_small">
+            <div class="home-filter__row">
+              <div class="home-filter__cell-small">
+                <label class="select">
                   <div class="select__label">Ширина</div>
                   <select class="select__input">
                     <option>205</option>
@@ -163,8 +163,8 @@
                   </select>
                 </label>
               </div>
-              <div>
-                <label class="select select_small">
+              <div class="home-filter__cell-small">
+                <label class="select">
                   <div class="select__label">Профиль</div>
                   <select class="select__input">
                     <option>205</option>
@@ -173,8 +173,8 @@
                   </select>
                 </label>
               </div>
-              <div>
-                <label class="select select_medium">
+              <div class="home-filter__cell-medium">
+                <label class="select">
                   <div class="select__label">Диаметр</div>
                   <select class="select__input">
                     <option>205</option>
@@ -184,9 +184,9 @@
                 </label>
               </div>
             </div>
-            <div class="filter__row">
-              <div>
-                <label class="select select_large">
+            <div class="home-filter__row">
+              <div class="home-filter__cell-large">
+                <label class="select">
                   <div class="select__label">Производитель</div>
                   <select class="select__input">
                     <option>Все</option>
@@ -196,15 +196,15 @@
                 </label>
               </div>
               <div>
-                <button class="filter__submit btn btn_action" type="submit">Подобрать</button>
+                <button class="home-filter__submit btn btn_action" type="submit">Подобрать</button>
               </div>
             </div>
           </form>
-          <form class="filter filter_discs">
-            <h2 class="filter__title">Диски</h2>
-            <div class="filter__row">
-              <div>
-                <label class="select select_small">
+          <form class="home-filter home-filter_discs">
+            <h2 class="home-filter__title">Диски</h2>
+            <div class="home-filter__row">
+              <div class="home-filter__cell-small">
+                <label class="select">
                   <div class="select__label">Диаметр</div>
                   <select class="select__input">
                     <option>205</option>
@@ -213,8 +213,8 @@
                   </select>
                 </label>
               </div>
-              <div>
-                <label class="select select_small">
+              <div class="home-filter__cell-small">
+                <label class="select">
                   <div class="select__label">Ширина</div>
                   <select class="select__input">
                     <option>205</option>
@@ -223,8 +223,8 @@
                   </select>
                 </label>
               </div>
-              <div>
-                <label class="select select_medium">
+              <div class="home-filter__cell-medium">
+                <label class="select">
                   <div class="select__label">Крепежное отверстие</div>
                   <select class="select__input">
                     <option>205</option>
@@ -234,9 +234,9 @@
                 </label>
               </div>
             </div>
-            <div class="filter__row">
-              <div>
-                <label class="select select_large">
+            <div class="home-filter__row">
+              <div class="home-filter__cell-large">
+                <label class="select">
                   <div class="select__label">Центральное отверстие</div>
                   <select class="select__input">
                     <option>Все</option>
@@ -246,7 +246,7 @@
                 </label>
               </div>
               <div>
-                <button class="filter__submit btn btn_action" type="submit">Подобрать</button>
+                <button class="home-filter__submit btn btn_action" type="submit">Подобрать</button>
               </div>
             </div>
           </form>
@@ -370,30 +370,30 @@
                 </a>
               </li>
             </ul>
-            <a class="view-all" href="/">
+            <a class="spec-link" href="/">
               Все производители
-              <svg class="view-all__icon">
+              <svg class="spec-link__icon">
                 <use xlink:href="../img/sprite.svg#chevron-right"></use>
               </svg>
             </a>
           </div>
           <div class="home-tires__rightside">
             <div class="showcase">
-              <div class="showcase__types">
-                <ul class="showcase__tabs" data-uk-switcher="connect: .js-tires-showcase">
-                  <li class="showcase__tab-item">
-                    <a class="showcase__tab-link" href="#">Легковые</a></li>
-                  <li class="showcase__tab-item">
-                    <a class="showcase__tab-link" href="#">Коммерческие</a></li>
-                  <li class="showcase__tab-item">
-                    <a class="showcase__tab-link" href="#">Мото</a></li>
-                  <li class="showcase__tab-item">
-                    <a class="showcase__tab-link" href="#">Квадро</a></li>
+              <div class="showcase__types tabs">
+                <ul class=" tabs__list" data-uk-switcher="connect: .js-tires-showcase">
+                  <li class="tabs__item">
+                    <a class="tabs__link" href="#">Легковые</a></li>
+                  <li class="tabs__item">
+                    <a class="tabs__link" href="#">Коммерческие</a></li>
+                  <li class="tabs__item">
+                    <a class="tabs__link" href="#">Мото</a></li>
+                  <li class="tabs__item">
+                    <a class="tabs__link" href="#">Квадро</a></li>
                 </ul>
                 <div class="showcase__view-all-area">
-                  <a class="view-all" href="/">
+                  <a class="spec-link" href="/">
                     Все шины
-                    <svg class="view-all__icon">
+                    <svg class="spec-link__icon">
                       <use xlink:href="../img/sprite.svg#chevron-right"></use>
                     </svg>
                   </a>
@@ -423,7 +423,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -447,7 +452,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -468,7 +478,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -489,7 +504,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                     </ul>
@@ -529,7 +549,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -548,7 +573,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -567,7 +597,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
@@ -586,7 +621,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                     </ul>
@@ -613,9 +653,11 @@
                           <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1"
                             title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -625,16 +667,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -644,16 +693,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -663,16 +719,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -682,7 +745,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                     </ul>
@@ -710,9 +778,11 @@
                           <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1"
                             title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -722,16 +792,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -741,16 +818,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -760,16 +844,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -779,7 +870,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                     </ul>
@@ -806,9 +902,11 @@
                           <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1"
                             title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -818,16 +916,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -837,16 +942,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -856,16 +968,23 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                       <li>
                         <div class="card">
                           <a class="card__img-wrapper" href="/" tabindex="-1">
                             <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                            <svg class="card__season-type">
-                              <use xlink:href="../img/sprite.svg#sun"></use>
-                            </svg>
+                            <div class="card__season-type">
+                              <svg class="card__season-type-icon">
+                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                              </svg>
+                            </div>
                           </a>
                           <h3 class="card__title">
                             <a class="card__title-link" href="/">
@@ -875,7 +994,12 @@
                           <div class="card__price">
                             13 500 <span class="rubl">c</span>
                           </div>
-                          <button class="btn btn_card" type="button">В корзину</button>
+                          <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                          <button class="btn btn_purchase" type="button">В корзину</button>
                         </div>
                       </li>
                     </ul>
@@ -884,14 +1008,15 @@
                         data-uk-slider-item="previous">
                         <svg class="goods-slider__slidenav-icon">
                           <use xlink:href="../img/sprite.svg#slidenav-left" />
-                        </svg></a>
+                        </svg>
+                      </a>
                       <a class="goods-slider__slidenav goods-slider__slidenav-forward" href="#"
                         data-uk-slider-item="next">
                         <svg class="goods-slider__slidenav-icon">
                           <use xlink:href="../img/sprite.svg#slidenav-right" />
-                        </svg></a>
+                        </svg>
+                      </a>
                     </div>
-
                   </div>
                 </li>
               </ul>
@@ -903,19 +1028,19 @@
             Диски
           </h2>
           <div class="showcase">
-            <div class="showcase__types">
-              <ul class="showcase__tabs" data-uk-switcher="connect: .js-discs-showcase">
-                <li class="showcase__tab-item">
-                  <a class="showcase__tab-link" href="#">Литые</a>
+            <div class="showcase__types tabs">
+              <ul class="tabs__list" data-uk-switcher="connect: .js-discs-showcase">
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">Литые</a>
                 </li>
-                <li class="showcase__tab-item">
-                  <a class="showcase__tab-link" href="#">Стальные</a>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">Стальные</a>
                 </li>
               </ul>
               <div class="showcase__view-all-area">
-                <a class="view-all" href="/">
+                <a class="spec-link" href="/">
                   Все диски
-                  <svg class="view-all__icon">
+                  <svg class="spec-link__icon">
                     <use xlink:href="../img/sprite.svg#chevron-right"></use>
                   </svg>
                 </a>
@@ -939,7 +1064,12 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
@@ -955,7 +1085,12 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
@@ -971,7 +1106,12 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
@@ -987,7 +1127,12 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                   </ul>
@@ -1013,9 +1158,11 @@
                         <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1"
                           title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
                           <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                          <svg class="card__season-type">
-                            <use xlink:href="../img/sprite.svg#sun"></use>
-                          </svg>
+                          <div class="card__season-type">
+                            <svg class="card__season-type-icon">
+                              <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                            </svg>
+                          </div>
                         </a>
                         <h3 class="card__title">
                           <a class="card__title-link" href="/">
@@ -1025,16 +1172,23 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
                       <div class="card">
                         <a class="card__img-wrapper" href="/" tabindex="-1">
                           <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                          <svg class="card__season-type">
-                            <use xlink:href="../img/sprite.svg#sun"></use>
-                          </svg>
+                          <div class="card__season-type">
+                            <svg class="card__season-type-icon">
+                              <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                            </svg>
+                          </div>
                         </a>
                         <h3 class="card__title">
                           <a class="card__title-link" href="/">
@@ -1044,16 +1198,23 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
                       <div class="card">
                         <a class="card__img-wrapper" href="/" tabindex="-1">
                           <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                          <svg class="card__season-type">
-                            <use xlink:href="../img/sprite.svg#sun"></use>
-                          </svg>
+                          <div class="card__season-type">
+                            <svg class="card__season-type-icon">
+                              <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                            </svg>
+                          </div>
                         </a>
                         <h3 class="card__title">
                           <a class="card__title-link" href="/">
@@ -1063,16 +1224,23 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                     <li>
                       <div class="card">
                         <a class="card__img-wrapper" href="/" tabindex="-1">
                           <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
-                          <svg class="card__season-type">
-                            <use xlink:href="../img/sprite.svg#sun"></use>
-                          </svg>
+                          <div class="card__season-type">
+                            <svg class="card__season-type-icon">
+                              <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                            </svg>
+                          </div>
                         </a>
                         <h3 class="card__title">
                           <a class="card__title-link" href="/">
@@ -1082,7 +1250,12 @@
                         <div class="card__price">
                           13 500 <span class="rubl">c</span>
                         </div>
-                        <button class="btn btn_card" type="button">В корзину</button>
+                        <div class="card__counter counter counter_product js-counter">
+                            <button class="counter__control js-counter-minus" type="button">-</button>
+                            <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                            <button class="counter__control js-counter-plus" type="button">+</button>
+                          </div>
+                        <button class="btn btn_purchase" type="button">В корзину</button>
                       </div>
                     </li>
                   </ul>
@@ -1128,7 +1301,7 @@
             <p>Как в Москве, так и в регионах к самым популярным маркам на автомобильном рынке относится резина
               Michelin,
               NOKIAN, Continental, Yokohama, Dunlop.</p>
-            <a class="home-about__link btn btn_link" href="/">перейти в каталог</a>
+            <a class="home-about__link btn btn_default" href="/">перейти в каталог</a>
           </div>
           <div class="home-about__rightside">
             <a class="home-about__banner-link" href="/" title="banner">
@@ -1165,7 +1338,7 @@
                 <a class="contacts-block__social-link" href="#">Whatsapp</a>
               </div>
             </div>
-            <button class="btn btn_action">Обратная связь</button>
+            <button class="btn btn_action" data-uk-toggle="target: #modal-callback">Обратная связь</button>
           </div>
         </div>
         <div class="main-footer__bottom">
@@ -1187,6 +1360,79 @@
         </div>
       </div>
     </footer>
+    <div id="modal-account" data-uk-modal>
+      <div class="modal uk-modal-dialog uk-modal-body">
+        <form>
+          <h2 class="modal__title">
+            Вход в личный кабинет
+          </h2>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Email
+              </div>
+              <input class="field__input" type="email" required>
+            </label>
+          </div>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Пароль
+              </div>
+              <input class="field__input" type="password" required>
+            </label>
+          </div>
+          <div class="modal__buttons">
+            <button class="btn btn_default" type="submit">
+              Войти
+            </button>
+            <a class="modal__registration" href="/">
+              Регистрация
+            </a>
+          </div>
+        </form>
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-btn-icon">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="modal-callback" data-uk-modal>
+      <div class="modal uk-modal-dialog uk-modal-body">
+        <form>
+          <h2 class="modal__title">
+            Заказать звонок
+          </h2>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Имя
+              </div>
+              <input class="field__input" type="text" required>
+            </label>
+          </div>
+          <div class="modal__row">
+            <label class="field">
+              <div class="field__label">
+                Телефон
+              </div>
+              <input class="field__input" type="tel" required>
+            </label>
+          </div>
+          <div class="modal__buttons">
+            <button class="btn btn_default" type="submit">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <button class="modal__close-btn uk-modal-close" type="button">
+          <svg class="modal__close-btn-icon">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
   <script src="../bundle.js"></script>
 </body>
