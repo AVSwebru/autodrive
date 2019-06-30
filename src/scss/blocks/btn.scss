@@ -1,47 +1,48 @@
 .btn {
-  @include reset-btn;
-  @include reset-link;
-  display: inline-block;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  transition: background-color 0.25s;
-  &:hover {
-    transition: background-color 0.25s;
-  }
-  &_action {
-    padding: 11px 28px 10px;
-    color: #fff;
-    background-color: #f91c1e;
-    &:hover {
-      background-color: darken(#f91c1e, 10%);
-    }
-  }
-  &_purchase {
-    padding: 12px 18px;
-    background-color: #ffd703;
-    color: #190c1a;
-    &:hover {
-      background-color: #f91c1e;
-      color: #fff;
-    }
-  }
-  &_default {
-    min-width: 137px;
-    box-sizing: border-box;
-    padding: 11px 20px 12px;
-    background-color: #1f1f1f;
-    color: #fff;
-    &:hover {
-      background-color: lighten(#1f1f1f, 10%);
-      color: #fff;
-    }
-  }
-  &_quick-buy {
-    padding: 11px 14px 12px;
-    border: 1px solid #c1d4e3;
-    color: #328dd5;
-  }
+	@include reset-btn;
+	@include reset-link;
+	display: inline-block;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	transition: background-color 0.25s;
+	&:hover {
+		transition: background-color 0.25s;
+	}
+	&_action {
+		padding: 11px 28px 10px;
+		color: #fff;
+		background-color: #f91c1e;
+		box-shadow: 5px 5px 22px 0px rgba(115, 115, 115, 0.5);
+		&:hover {
+			background-color: darken(#f91c1e, 10%);
+		}
+	}
+	&_purchase {
+		padding: 12px 18px;
+		background-color: #ffd703;
+		color: #190c1a;
+		&:hover {
+			background-color: #f91c1e;
+			color: #fff;
+		}
+	}
+	&_default {
+		min-width: 137px;
+		box-sizing: border-box;
+		padding: 11px 20px 12px;
+		background-color: #1f1f1f;
+		color: #fff;
+		&:hover {
+			background-color: lighten(#1f1f1f, 10%);
+			color: #fff;
+		}
+	}
+	&_quick-buy {
+		padding: 11px 14px 12px;
+		border: 1px solid #c1d4e3;
+		color: #328dd5;
+	}
 }
