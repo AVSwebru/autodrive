@@ -2541,6 +2541,7 @@ button {
       margin-bottom: 20px; } }
 
 .home-filter__title {
+  margin: 0;
   text-align: center;
   color: #2c231a;
   font-family: "Oswald", sans-serif;
