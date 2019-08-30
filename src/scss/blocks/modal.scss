@@ -1,0 +1,70 @@
+.modal {
+  margin: auto;
+  width: 750px;
+  padding: 50px 65px 80px 335px;
+  background: #fff url("../img/bg-modal.jpg") no-repeat 0 0 / 295px 100%;
+  @media (max-width: $breakpoint-medium) {
+    width: 500px;
+    padding: 50px 30px;
+    background: #fff;
+  }
+}
+
+.modal__title {
+  margin: 0 0 45px;
+  font-family: $font-decor;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.modal__row {
+  margin-bottom: 35px;
+}
+
+.modal__registration {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.modal__buttons {
+  margin-top: 45px;
+  & > *:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.modal__close-btn {
+  @include reset-btn;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    .modal__close-btn-icon {
+      fill: #1f1f1f;
+    }
+  }
+}
+
+.modal__close-btn-icon {
+  width: 18px;
+  height: 18px;
+  fill: #9f9f9f;
+}
+
+.modal__privacy{
+  display: flex;
+  margin-top: 45px;
+  span{
+    margin-left: 10px;
+    a{
+      text-decoration: underline;
+      
+    }
+  }
+}

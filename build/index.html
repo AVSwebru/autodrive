@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="page-wrapper">
+        <div class="techwork">
+            <div class="techwork__line"></div>
+            <div class="techwork__body">
+                Заказы временно не обрабатываются. Оформление заказов работает в том же режиме.
+            </div>
+        </div>
+        <header class="main-header">
+            <div class="uk-container">
+                <div class="main-header__top">
+                    <a class="main-header__logo" href="/" title="Интернет-магазин шин и дисков">
+                        <img src="img/logo.png?e413dda2e61ffdaca8ecef8ce0a57ce3" alt="Интернет-магазин шин и дисков">
+                    </a>
+                    <nav class="nav-main js-nav-main">
+                        <ul class="nav-main__list">
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">О компании</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Доставка</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Гарантия</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contacts-block contacts-block_header js-contacts-header">
+                        <a class="contacts-block__tel" href="tel: +79264775335">+7 926 477 53 35</a>
+                        <div class="contacts-block__social">
+                            <a class="contacts-block__social-link" href="#">Viber</a>,
+                            <a class="contacts-block__social-link" href="#">Whatsapp</a>
+                        </div>
+                    </div>
+                    <button class="main-header__btn-menu js-menu-open" type="submit" aria-label="Открыть меню">
+                        <svg class="main-header__btn-menu-icon" viewBox="0 0 459 459">
+                            <path d="M0 382.5h459v-51H0v51zM0 255h459v-51H0v51zM0 76.5v51h459v-51H0z" />
+                        </svg>
+                    </button>
+                    <div class="main-header__store">
+                        <div class="main-header__store-links">
+                            <a class="main-header__control" href="/">
+                                <svg class="main-header__control-icon">
+                                    <use xlink:href="../img/sprite.svg#cart" />
+                                </svg>
+                                Корзина
+                            </a>
+                            <button class="main-header__control" data-uk-toggle="target: #modal-account">
+                                <svg class="main-header__control-icon">
+                                    <use xlink:href="../img/sprite.svg#user" />
+                                </svg>
+                                Войти
+                            </button>
+                        </div>
+                        <div class="main-header__store-info">
+                            <a class="main-header__cart-link" href="/">4 товара</a> на сумму 42 500
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header__bottom">
+                    <nav class="nav-sections">
+                        <ul class="nav-sections__list">
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                  Шины
+                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                  Диски
+                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                  Колеса
+                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                  Запчасти
+                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="searchbar searchbar_header js-searchbar">
+                        <input class="searchbar__input" type="search" placeholder="Искать по названию" aria-label="Поле поиска" required>
+                        <button class="searchbar__submit" type="submit" aria-label="Искать">
+                            <svg class="searchbar__submit-icon">
+                                <use xlink:href="../img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="menu-adapt">
+                        <div class="menu-adapt__inner js-menu-adapt"></div>
+                        <button class="menu-adapt__close-btn js-menu-close" type="button" aria-label="Закрыть меню">
+                            <svg class="menu-adapt__close-icon" viewBox="0 0 357 357">
+                                <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="home">
+            <div class="uk-container">
+                <div class="home__filters">
+                    <form class="home-filter home-filter_tires">
+                        <h2 class="home-filter__title">Шины</h2>
+                        <div class="home-filter__season-types">
+                            <label class="home-filter__season-type season-type">
+                                <input class="season-type__input" type="checkbox">
+                                <span class="season-type__label">
+                  <span class="season-type__text">
+                    Лето
+                  </span>
+                                <svg class="season-type__icon">
+                                    <use xlink:href="../img/sprite.svg#check"></use>
+                                </svg>
+                                </span>
+                            </label>
+                            <label class="home-filter__season-type season-type js-season-type-winter">
+                                <input class="season-type__input" type="checkbox">
+                                <span class="season-type__label">
+                  <span class="season-type__text">
+                    Зима
+                  </span>
+                                <svg class="season-type__icon">
+                                    <use xlink:href="../img/sprite.svg#check"></use>
+                                </svg>
+                                </span>
+                            </label>
+                            <label class="home-filter__season-type season-type js-season-type-spikes">
+                                <input class="season-type__input" type="checkbox">
+                                <span class="season-type__label">
+                                <span class="season-type__text">
+                                  Шипы
+                                </span>
+                                <svg class="season-type__icon">
+                                    <use xlink:href="../img/sprite.svg#check"></use>
+                                </svg>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="home-filter__row">
+                            <div class="home-filter__cell-small">
+                                <label class="select">
+                                    <div class="select__label">Ширина</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="home-filter__cell-small">
+                                <label class="select">
+                                    <div class="select__label">Профиль</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="home-filter__cell-medium">
+                                <label class="select">
+                                    <div class="select__label">Диаметр</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="home-filter__row">
+                            <div class="home-filter__cell-large">
+                                <label class="select">
+                                    <div class="select__label">Производитель</div>
+                                    <select class="select__input">
+                                        <option>Все</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <button class="home-filter__submit btn btn_action" type="submit">Подобрать</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="home-filter home-filter_discs">
+                        <h2 class="home-filter__title">Диски</h2>
+                        <div class="home-filter__row">
+                            <div class="home-filter__cell-small">
+                                <label class="select">
+                                    <div class="select__label">Диаметр</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="home-filter__cell-small">
+                                <label class="select">
+                                    <div class="select__label">Ширина</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="home-filter__cell-medium">
+                                <label class="select">
+                                    <div class="select__label">Крепежное отверстие</div>
+                                    <select class="select__input">
+                                        <option>205</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="home-filter__row">
+                            <div class="home-filter__cell-large">
+                                <label class="select">
+                                    <div class="select__label">Центральное отверстие</div>
+                                    <select class="select__input">
+                                        <option>Все</option>
+                                        <option>405</option>
+                                        <option>505</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <button class="home-filter__submit btn btn_action" type="submit">Подобрать</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <section class="home-tires">
+                    <div class="home-tires__leftside">
+                        <h2 class="home-tires__section-title section-title">
+                            Шины
+                        </h2>
+                        <ul class="home-tires__brand-list">
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Amtel <span class="home-tires__link-count">4</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Kumho <span class="home-tires__link-count">22</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Cordiant <span class="home-tires__link-count">4</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Yokohama <span class="home-tires__link-count">22</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Hankook <span class="home-tires__link-count">5</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Bridgestone <span class="home-tires__link-count">25</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Pirelli <span class="home-tires__link-count">3</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Gislaved <span class="home-tires__link-count">5</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">TRIANGL <span class="home-tires__link-count">32</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Michelin <span class="home-tires__link-count">6</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">EBFGoodrich <span class="home-tires__link-count">21</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Tigar <span class="home-tires__link-count">11</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Dunlop <span class="home-tires__link-count">42</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Continental <span class="home-tires__link-count">12</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Amtel <span class="home-tires__link-count">4</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Kumho <span class="home-tires__link-count">22</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Cordiant <span class="home-tires__link-count">4</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Yokohama <span class="home-tires__link-count">22</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Hankook <span class="home-tires__link-count">5</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Bridgestone <span class="home-tires__link-count">2</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Pirelli <span class="home-tires__link-count">23</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Gislaved <span class="home-tires__link-count">54</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">TRIANGL <span class="home-tires__link-count">3</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Michelin <span class="home-tires__link-count">23</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">EBFGoodrich <span class="home-tires__link-count">2</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Tigar <span class="home-tires__link-count">6</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Dunlop <span class="home-tires__link-count">7</span>
+                </a>
+                            </li>
+                            <li class="home-tires__item">
+                                <a href="/" class="home-tires__link">Continental <span class="home-tires__link-count">2</span>
+                </a>
+                            </li>
+                        </ul>
+                        <a class="spec-link" href="/">
+              Все производители
+              <svg class="spec-link__icon">
+                <use xlink:href="../img/sprite.svg#chevron-right"></use>
+              </svg>
+            </a>
+                    </div>
+                    <div class="home-tires__rightside">
+                        <div class="showcase">
+                            <div class="showcase__types tabs">
+                                <ul class=" tabs__list" data-uk-switcher="connect: .js-tires-showcase">
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Легковые</a></li>
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Коммерческие</a></li>
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Мото</a></li>
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Квадро</a></li>
+                                </ul>
+                                <div class="showcase__view-all-area">
+                                    <a class="spec-link" href="/">
+                    Все шины
+                    <svg class="spec-link__icon">
+                      <use xlink:href="../img/sprite.svg#chevron-right"></use>
+                    </svg>
+                  </a>
+                                </div>
+                            </div>
+                            <ul class="showcase__goods uk-switcher js-tires-showcase">
+                                <li>
+                                    <div class="goods-slider uk-slider-container" tabindex="-1" data-uk-slider>
+                                        <ul class="goods-slider__items uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@l uk-grid">
+                                            <li>
+                                                <div class=" card">
+                                                    <a class="card__img-wrapper" href="/" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                        <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                        <div class="card__season-type">
+                                                            <svg class="card__season-type-icon">
+                                                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <h3 class="card__title">
+                                                        <a class="card__title-link" href="/">
+                              Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                            </a>
+                                                    </h3>
+                                                    <div class="card__price">
+                                                        13 500 <span class="rubl">c</span>
+                                                    </div>
+                                                    <div class="counter card__counter counter_cart js-counter">
+                                                        <button class="counter__control js-counter-minus" type="button">-</button>
+                                                        <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                        <button class="counter__control js-counter-plus" type="button">+</button>
+                                                    </div>
+                                                    <button class="btn btn_purchase" type="button">В корзину</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" card">
+                                                    <a class="card__img-wrapper" href="/" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                        <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                        <div class="card__season-type">
+                                                            <svg class="card__season-type-icon">
+                                                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <h3 class="card__title">
+                                                        <a class="card__title-link" href="/">
+                              Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                            </a>
+                                                    </h3>
+                                                    <div class="card__price">
+                                                        13 500 <span class="rubl">c</span>
+                                                    </div>
+                                                    <div class="counter card__counter counter_cart js-counter">
+                                                        <button class="counter__control js-counter-minus" type="button">-</button>
+                                                        <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                        <button class="counter__control js-counter-plus" type="button">+</button>
+                                                    </div>
+                                                    <button class="btn btn_purchase" type="button">В корзину</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" card">
+                                                    <a class="card__img-wrapper" href="/" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                        <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                        <div class="card__season-type">
+                                                            <svg class="card__season-type-icon">
+                                                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <h3 class="card__title">
+                                                        <a class="card__title-link" href="/">
+                              Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                            </a>
+                                                    </h3>
+                                                    <div class="card__price">
+                                                        13 500 <span class="rubl">c</span>
+                                                    </div>
+                                                    <div class="counter card__counter counter_cart js-counter">
+                                                        <button class="counter__control js-counter-minus" type="button">-</button>
+                                                        <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                        <button class="counter__control js-counter-plus" type="button">+</button>
+                                                    </div>
+                                                    <button class="btn btn_purchase" type="button">В корзину</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" card">
+                                                    <a class="card__img-wrapper" href="/" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                        <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                        <div class="card__season-type">
+                                                            <svg class="card__season-type-icon">
+                                                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <h3 class="card__title">
+                                                        <a class="card__title-link" href="/">
+                              Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                            </a>
+                                                    </h3>
+                                                    <div class="card__price">
+                                                        13 500 <span class="rubl">c</span>
+                                                    </div>
+                                                    <div class="counter card__counter counter_cart js-counter">
+                                                        <button class="counter__control js-counter-minus" type="button">-</button>
+                                                        <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                        <button class="counter__control js-counter-plus" type="button">+</button>
+                                                    </div>
+                                                    <button class="btn btn_purchase" type="button">В корзину</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" card">
+                                                    <a class="card__img-wrapper" href="/" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                        <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                        <div class="card__season-type">
+                                                            <svg class="card__season-type-icon">
+                                                                <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <h3 class="card__title">
+                                                        <a class="card__title-link" href="/">
+                              Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                            </a>
+                                                    </h3>
+                                                    <div class="card__price">
+                                                        13 500 <span class="rubl">c</span>
+                                                    </div>
+                                                    <div class="counter card__counter counter_cart js-counter">
+                                                        <button class="counter__control js-counter-minus" type="button">-</button>
+                                                        <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                        <button class="counter__control js-counter-plus" type="button">+</button>
+                                                    </div>
+                                                    <button class="btn btn_purchase" type="button">В корзину</button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="goods-slider__slidenav-container">
+                                            <a class="goods-slider__slidenav goods-slider__slidenav-back" href="#" data-uk-slider-item="previous">
+                                                <svg class="goods-slider__slidenav-icon">
+                                                    <use xlink:href="../img/sprite.svg#slidenav-left" />
+                                                </svg>
+                                            </a>
+                                            <a class="goods-slider__slidenav goods-slider__slidenav-forward" href="#" data-uk-slider-item="next">
+                                                <svg class="goods-slider__slidenav-icon">
+                                                    <use xlink:href="../img/sprite.svg#slidenav-right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="home-discs">
+                    <h2 class="home-discs__section-title section-title">
+                        Диски
+                    </h2>
+                    <div class="showcase">
+                        <div class="showcase__types tabs">
+                            <ul class="tabs__list" data-uk-switcher="connect: .js-discs-showcase">
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Литые</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Стальные</a>
+                                </li>
+                            </ul>
+                            <div class="showcase__view-all-area">
+                                <a class="spec-link" href="/">
+                  Все диски
+                  <svg class="spec-link__icon">
+                    <use xlink:href="../img/sprite.svg#chevron-right"></use>
+                  </svg>
+                </a>
+                            </div>
+                        </div>
+                        <ul class="showcase__goods uk-switcher js-discs-showcase">
+                            <li>
+                                <div class="goods-slider" tabindex="-1" data-uk-slider>
+                                    <ul class="goods-slider__items uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/disc.png?3afb8f2e4dd27a0b378bf636a95a9a07" alt="Шина">
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="goods-slider__slidenav-container">
+                                        <a class="goods-slider__slidenav goods-slider__slidenav-back" href="#" data-uk-slider-item="previous">
+                                            <svg class="goods-slider__slidenav-icon">
+                                                <use xlink:href="../img/sprite.svg#slidenav-left" />
+                                            </svg>
+                                        </a>
+                                        <a class="goods-slider__slidenav goods-slider__slidenav-forward" href="#" data-uk-slider-item="next">
+                                            <svg class="goods-slider__slidenav-icon">
+                                                <use xlink:href="../img/sprite.svg#slidenav-right" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-slider" tabindex="-1" data-uk-slider>
+                                    <ul class="goods-slider__items uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1" tabindex="-1" title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                                                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                    <div class="card__season-type">
+                                                        <svg class="card__season-type-icon">
+                                                            <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                    <div class="card__season-type">
+                                                        <svg class="card__season-type-icon">
+                                                            <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                    <div class="card__season-type">
+                                                        <svg class="card__season-type-icon">
+                                                            <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <a class="card__img-wrapper" href="/" tabindex="-1">
+                                                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                                                    <div class="card__season-type">
+                                                        <svg class="card__season-type-icon">
+                                                            <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <h3 class="card__title">
+                                                    <a class="card__title-link" href="/">
+                            Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                          </a>
+                                                </h3>
+                                                <div class="card__price">
+                                                    13 500 <span class="rubl">c</span>
+                                                </div>
+                                                <div class="card__counter counter counter_product js-counter">
+                                                    <button class="counter__control js-counter-minus" type="button">-</button>
+                                                    <input class="counter__input js-counter-input" type="text" value="1" name="count">
+                                                    <button class="counter__control js-counter-plus" type="button">+</button>
+                                                </div>
+                                                <button class="btn btn_purchase" type="button">В корзину</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="goods-slider__slidenav-container">
+                                        <a class="goods-slider__slidenav goods-slider__slidenav-back" href="#" data-uk-slider-item="previous">
+                                            <svg class="goods-slider__slidenav-icon">
+                                                <use xlink:href="../img/sprite.svg#slidenav-left" />
+                                            </svg>
+                                        </a>
+                                        <a class="goods-slider__slidenav goods-slider__slidenav-forward" href="#" data-uk-slider-item="next">
+                                            <svg class="goods-slider__slidenav-icon">
+                                                <use xlink:href="../img/sprite.svg#slidenav-right" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="home-about">
+                    <div class="home-about__leftside">
+                        <h2 class="home-about__section-title section-title">
+                            О компании
+                        </h2>
+                        <p>Интернет-магазин сети сервисных центров «НА КОЛЕСАХ.RU» предлагает владельцам авто в Москве и регионах широкий ассортимент автомобильных шин.Подобрать их можно по размеру, по марке автомобиля, сравнить по цене, выбрав подходящие.
+                            Для удобного поиска товара в каталоге магазина снабжен техническими характеристиками, фотографиями и ценой.</p>
+
+                        <p>Если вы затрудняетесь с выбором, в интернет-магазине работают консультанты, которые помогут заказать нужный вариант шин. И в Москве, и в регионах можно получить консультацию по телефону, почте или онлайн по интернету.
+                        </p>
+
+                        <p>В наличии любые автомобильные шины — и отечественные, и импортные для любого времени года. Продажа товаров, в том числе резины, осуществляется в кредит. Если вас интересуют летние шины, вы легко сможете заказать через интернет
+                            комплект нужной марки.</p>
+
+                        <p>Как в Москве, так и в регионах к самым популярным маркам на автомобильном рынке относится резина Michelin, NOKIAN, Continental, Yokohama, Dunlop.</p>
+                        <a class="home-about__link btn btn_default" href="/">перейти в каталог</a>
+                    </div>
+                    <div class="home-about__rightside">
+                        <a class="home-about__banner-link" href="/" title="banner">
+                            <img src="img/banner.png?2f988a256b59b86588c210f234d85b66" alt="banner">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer class="main-footer">
+            <div class="uk-container">
+                <div class="main-footer__top">
+                    <nav class="nav-footer" aria-label="Навигация в футере">
+                        <ul class="nav-footer__list">
+                            <li class="nav-footer__item">
+                                <a class="nav-footer__link" href="/">О компании</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a class="nav-footer__link" href="/">Доставка</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a class="nav-footer__link" href="/">Гарантия</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a class="nav-footer__link" href="/">Контакты</a>
+                            </li>
+                            <li class="nav-footer__item">
+                                <a class="nav-footer__link" href="/">Производители</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="main-footer__top-rightside">
+                        <div class="main-footer__contacts-block contacts-block contacts-block_footer">
+                            <a class="contacts-block__tel" href="tel: +79264775335">+7 926 477 53 35</a>
+                            <div class="contacts-block contacts-block_footer">
+                                <a class="contacts-block__social-link" href="#">Viber</a>,
+                                <a class="contacts-block__social-link" href="#">Whatsapp</a>
+                            </div>
+                        </div>
+                        <button class="btn btn_action" data-uk-toggle="target: #modal-callback">Обратная связь</button>
+                    </div>
+                </div>
+                <div class="main-footer__bottom">
+                    <ul class="main-footer__policy">
+                        <li class="main-footer__policy-item">
+                            <a class="main-footer__policy-link">
+                Политика конфиденциальности
+              </a>
+                        </li>
+                        <li class="main-footer__policy-item">
+                            <a class="main-footer__policy-link">
+                Пользовательское соглашение
+              </a>
+                        </li>
+                    </ul>
+                    <a class="main-footer__devs" href="/" title="Разработано в AVS Web">
+                        <img class="main-footer__devs-logo" src="img/devs.svg?39afc14a603071bca9df12c85cc0c425" alt="Разработано в AVS Web">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div id="modal-account" data-uk-modal>
+            <div class="modal uk-modal-dialog uk-modal-body">
+                <form>
+                    <h2 class="modal__title">
+                        Вход в личный кабинет
+                    </h2>
+                    <div class="modal__row">
+                        <label class="field">
+                            <div class="field__label">
+                                Email
+                            </div>
+                            <input class="field__input" type="email" required>
+                        </label>
+                    </div>
+                    <div class="modal__row">
+                        <label class="field">
+                            <div class="field__label">
+                                Пароль
+                            </div>
+                            <input class="field__input" type="password" required>
+                        </label>
+                    </div>
+                    <div class="modal__buttons">
+                        <button class="btn btn_default" type="submit">
+                            Войти
+                        </button>
+                        <a class="modal__registration" href="/">
+              Регистрация
+            </a>
+                    </div>
+                </form>
+                <button class="modal__close-btn uk-modal-close" type="button">
+                    <svg class="modal__close-btn-icon">
+                        <use xlink:href="../img/sprite.svg#close" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="modal-callback" data-uk-modal>
+            <div class="modal uk-modal-dialog uk-modal-body">
+                <form>
+                    <h2 class="modal__title">
+                        Заказать звонок
+                    </h2>
+                    <div class="modal__row">
+                        <label class="field">
+                            <div class="field__label">
+                                Имя
+                            </div>
+                            <input class="field__input" type="text" required>
+                        </label>
+                    </div>
+                    <div class="modal__row">
+                        <label class="field">
+                            <div class="field__label">
+                                Телефон
+                            </div>
+                            <input class="field__input" type="tel" required>
+                        </label>
+                    </div>
+                    <div class="modal__buttons">
+                        <button class="btn btn_default" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                    <div class="modal__privacy">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" name="privacy-accept">
+                        </div>
+                        <span>
+              Отправляя форму, я даю согласие на <a href="https://autodrive.shop/terms/">обработку персональных данных</a>.
+            </span>
+                    </div>
+                </form>
+                <button class="modal__close-btn uk-modal-close" type="button">
+                    <svg class="modal__close-btn-icon">
+                        <use xlink:href="../img/sprite.svg#close" />
+                    </svg>
+                </button>
+            </div>
+        </div>  
+    <script src="../bundle.js"></script>
+</body>
+
+</html>

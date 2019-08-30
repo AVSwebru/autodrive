@@ -1,0 +1,28 @@
+.season-type {
+	cursor: pointer;
+}
+
+.season-type__input {
+	@include hidden-input;
+	&:checked + .season-type__label .season-type__icon {
+		fill: #f91c1e;
+	}
+	&:focus + .season-type__label .season-type__text {
+		border-bottom-color: #328dd5;
+	}
+}
+
+.season-type__label {
+	display: flex;
+}
+
+.season-type__text {
+	border-bottom: 2px solid transparent;
+}
+
+.season-type__icon {
+	fill: #808080;
+	width: 14px;
+	height: 14px;
+	margin-left: 5px;
+}

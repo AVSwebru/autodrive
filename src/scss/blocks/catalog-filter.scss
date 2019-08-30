@@ -1,0 +1,32 @@
+.catalog-filter {
+  padding: 38px 20px 35px 15px;
+  background: url('../img/bg-filter.jpg') no-repeat 50% 50% / cover;
+}
+
+.catalog-filter__row {
+  margin-bottom: 40px;
+}
+
+.catalog-filter__columned-row {
+  display: flex;
+  margin-bottom: 40px;
+  & > div {
+    flex-grow: 1;
+    &:first-of-type {
+      margin-right: 40px;
+    }
+  }
+}
+
+.catalog-filter__season-types {
+  display: flex;
+  margin: 0 -10px 40px;
+}
+
+.catalog-filter__season-type {
+  margin: 0 10px;
+}
+
+.catalog-filter__submit-btn {
+  margin-bottom: 15px;
+}

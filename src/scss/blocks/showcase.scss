@@ -1,0 +1,13 @@
+.showcase__types {
+  margin-bottom: 20px;
+}
+
+.showcase__view-all-area {
+  flex-grow: 1;
+  padding: 5px 0;
+  border-bottom: 5px solid #ebebeb;
+  text-align: right;
+  @media (max-width: $breakpoint-small) {
+    border-bottom: none;
+  }
+}

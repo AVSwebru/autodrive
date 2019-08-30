@@ -1,0 +1,33 @@
+.contacts{
+	font-family: "Gilroy", sans-serif;
+	&__content{
+		margin-top: 50px;
+		&-contact{
+			margin-bottom: 20px;
+			text-align: center;
+			.hr{
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+
+			@at-root{
+				.hr{
+					width: 100%;
+					height: 5px;
+				}
+				.hr-primary{
+  					background: #328dd5;
+				}
+			}
+
+		}
+		&-address{
+			font-size: 18px;
+			color: #2c231a;
+				svg{
+					margin: 0px 0px 1px;
+				}
+			
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.menu-adapt {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 110px 20px 20px;
+  background-color: #2472b0;
+}
+
+.menu-adapt__inner {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.menu-adapt__close-btn {
+  @include reset-btn;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-adapt__close-icon {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}

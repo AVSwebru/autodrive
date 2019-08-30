@@ -1,0 +1,35 @@
+.home__filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 50px;
+  }
+}
+
+.techwork{
+  &__line{
+    width: 100%;
+    height: 13px;
+    display: block;
+    background: url(../../img/techworks-bg.png);
+    background-repeat: repeat-x;
+  }
+  &__body{
+    text-align: center;
+    background: #f3da8f;
+    padding: 0 15px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #292929;
+    font-size: 18px;
+  }
+  @media(max-width: 450px){
+    &__body{
+      height: 100px;
+    }
+  }
+}

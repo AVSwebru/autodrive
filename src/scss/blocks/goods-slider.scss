@@ -1,0 +1,25 @@
+.goods-slider__items {
+  margin-bottom: 30px;
+}
+
+.goods-slider__slidenav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goods-slider__slidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #e8e8e8;
+  &:not(:last-of-type) {
+    margin-right: 2px;
+  }
+}
+
+.goods-slider__slidenav-icon {
+  width: 14px;
+  height: 14px;
+}

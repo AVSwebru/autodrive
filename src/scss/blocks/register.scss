@@ -1,0 +1,31 @@
+.register{
+	font-family: Gilroy-Medium;	
+	@at-root{
+		.part-title{
+			h1{
+				font-family: "Oswald", sans-serif;
+				font-weight: bold;	
+				font-size: 30px;	
+			}
+		}
+	}
+	&__form{
+		font-family: "Gilroy", sans-serif;
+		width: 35%;
+		margin-top: 60px;
+		form{
+			.form-group{
+				margin-bottom: 25px;
+			}
+			@at-root{
+				.btn-default{
+					    min-width: 137px;
+					    box-sizing: border-box;
+					    padding: 11px 20px 12px;
+					    background-color: #1f1f1f;
+					    color: #fff;
+				}
+			}
+		}
+	}
+}

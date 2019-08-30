@@ -1,0 +1,48 @@
+.counter {
+  display: flex;
+  align-items: center;
+  width: 115px;
+  &_product {
+    .counter__control {
+      background-color: #fff;
+    }
+    .counter__input {
+      background-color: #f1f8fe;
+    }
+  }
+  &_cart {
+    .counter__control {
+      background-color: #e3f1fc;
+    }
+    .counter__input {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.counter__control {
+  @include reset-btn;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  color: #5d5c5c;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.25;
+  &:hover {
+    background-color: #328dd5;
+    color: #fff;
+    transition: background-color 0.25;
+  }
+}
+
+.counter__input {
+  width: 55px;
+  height: 36px;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 500;
+}

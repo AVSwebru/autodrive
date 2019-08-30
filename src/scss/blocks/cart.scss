@@ -1,0 +1,164 @@
+.cart__page-title {
+	margin: 50px 0 10px;
+	@media (max-width: $breakpoint-large) {
+		margin: 50px 0 30px;
+	}
+}
+
+.cart__products {
+	margin-bottom: 65px;
+}
+
+.cart__pool {
+	padding: 12px 30px 40px;
+	border: 1px solid #e6e6e6;
+}
+
+.cart__section-title {
+	margin-bottom: 15px;
+	font-size: 26px;
+}
+
+.cart__contacts-container {
+	padding: 55px 110px 65px 100px;
+	border: 1px solid #e6e6e6;
+	@media (max-width: $breakpoint-large) {
+		padding: 55px 20px 65px 20px;
+	}
+}
+
+.cart__contacts-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 30px;
+	margin-bottom: 40px;
+	@media (max-width: $breakpoint-medium) {
+		grid-template-columns: 100%;
+	}
+}
+
+.cart__contacts-msg-cell {
+	grid-row: span 2;
+}
+
+.cart__contacts {
+	margin-bottom: 65px;
+}
+
+.cart__contacts-buttons {
+	& > *:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+}
+
+.cart__variants {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px;
+}
+
+.cart__payment {
+	margin-bottom: 80px;
+}
+
+.cart__privacy {
+	display: flex;
+    align-items: center;
+    span{
+    	margin-left: 10px;
+    }
+	a {
+		text-decoration: underline;
+	}
+}
+
+.cart__total {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 40px;
+	padding-top: 25px;
+	border-top: 5px solid #2c231a;
+	margin-bottom: 40px;
+	@media (max-width: $breakpoint-medium) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.custom-checkbox{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #afafaf;
+	border-radius: 2px;
+	background: transparent;
+	position: relative;
+	input{
+		width: 20px;
+		height: 20px;
+		margin: 0;
+		padding: 0;
+		outline: none;
+		z-index: 999;
+	}
+	input:checked:after{
+		content: url(../img/checkmark.svg);
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+}
+
+.cart__total-info {
+	margin-right: 28px;
+	font-size: 20px;
+	@media (max-width: $breakpoint-medium) {
+		margin-bottom: 20px;
+	}
+}
+
+.cart__total-price {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.cart__fields {
+	display: flex;
+	margin-bottom: 12px;
+	@media (max-width: $breakpoint-medium) {
+		display: none;
+	}
+}
+
+.cart__field {
+	font-size: 15px;
+	color: #605952;
+}
+
+.cart__field-price {
+	margin-left: 43%;
+}
+
+.cart__field-count {
+	margin-left: 11%;
+}
+
+.cart__field-sum {
+	margin-left: 11%;
+}
+
+.cart__login{
+	&-title{
+		margin-top: 65px;
+		font-size: 15px;
+		color: #2c231a;
+	}
+	&-form{
+		width: 30%;
+		.form-group{
+			margin-top: 35px;
+		}
+	}
+}

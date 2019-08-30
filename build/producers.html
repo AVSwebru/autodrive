@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="uk-container">
+                <div class="main-header__top">
+                    <a class="main-header__logo" href="/" title="Интернет-магазин шин и дисков">
+                        <img src="img/logo.png?e413dda2e61ffdaca8ecef8ce0a57ce3" alt="Интернет-магазин шин и дисков">
+                    </a>
+                    <nav class="nav-main js-nav-main">
+                        <ul class="nav-main__list">
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">О компании</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Доставка</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Гарантия</a>
+                            </li>
+                            <li class="nav-main__item">
+                                <a class="nav-main__link" href="/">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contacts-block contacts-block_header js-contacts-header">
+                        <a class="contacts-block__tel" href="tel: +79264775335">+7 926 477 53 35</a>
+                        <div class="contacts-block__social">
+                            <a class="contacts-block__social-link" href="#">Viber</a>,
+                            <a class="contacts-block__social-link" href="#">Whatsapp</a>
+                        </div>
+                    </div>
+                    <button class="main-header__btn-menu js-menu-open" type="submit" aria-label="Открыть меню">
+                        <svg class="main-header__btn-menu-icon" viewBox="0 0 459 459">
+                            <path d="M0 382.5h459v-51H0v51zM0 255h459v-51H0v51zM0 76.5v51h459v-51H0z" />
+                        </svg>
+                    </button>
+                    <div class="main-header__store">
+                        <div class="main-header__store-links">
+                            <a class="main-header__control" href="/">
+                                <svg class="main-header__control-icon">
+                                    <use xlink:href="../img/sprite.svg#cart" />
+                                </svg>
+                                Корзина
+                            </a>
+                            <button class="main-header__control" data-uk-toggle="target: #modal-account">
+                                <svg class="main-header__control-icon">
+                                    <use xlink:href="../img/sprite.svg#user" />
+                                </svg>
+                                Войти
+                            </button>
+                        </div>
+                        <div class="main-header__store-info">
+                            <a class="main-header__cart-link" href="/">4 товара</a> на сумму 42 500
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header__bottom">
+                    <nav class="nav-sections">
+                        <ul class="nav-sections__list">
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                                Шины
+                                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                                Диски
+                                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                                Колеса
+                                </a>
+                            </li>
+                            <li class="nav-sections__item">
+                                <a class="nav-sections__link" href="/">
+                                Запчасти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="searchbar searchbar_header js-searchbar">
+                        <input class="searchbar__input" type="search" placeholder="Искать по названию" aria-label="Поле поиска" required>
+                        <button class="searchbar__submit" type="submit" aria-label="Искать">
+                            <svg class="searchbar__submit-icon">
+                                <use xlink:href="../img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="menu-adapt">
+                        <div class="menu-adapt__inner js-menu-adapt"></div>
+                        <button class="menu-adapt__close-btn js-menu-close" type="button" aria-label="Закрыть меню">
+                            <svg class="menu-adapt__close-icon" viewBox="0 0 357 357">
+                                <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="uk-container">
+                <ul class="breadcrumb uk-breadcrumb">
+                    <li><a href="/">Главная</a></li>
+                    <li><span>Производители</span></li>
+                </ul>
+                <div class="producers">
+                    <div class="producers__title part-title">
+                        <h1>Производители</h1>
+                    </div>
+                    <div class="producers__content">
+                        <img src="img/amtel.png?64060ad03604627cf85c2ce250319c2c" alt="amtel.png">
+                        <img src="img/kumho.png?adf637a271de5721827cea0f6e2ff9b7" alt="kumho.png">
+                        <img src="img/cordiant.png?494ff95bf65b89f92a320947c834f61c" alt="cordiant.png">
+                        <img src="img/yokohama.png?060f6acbc51a001caccac63da9f244b3" alt="yokohama.png">
+                        <img src="img/hankook.png?f966373ec67e532f24474455a0e93b9f" alt="hankook.png">
+                        <img src="img/bridgestone.png?633b77a4f9e3b47949a081e8137c7e80" alt="bridgestone.png">
+                        <img src="img/pirelli.png?97a5589e80cdc6db759b101edf5854bb" alt="pirelli.png">
+                        <img src="img/gislaved.png?4b09354ef1cc91987ccaf574356481f6" alt="gislaved.png">
+                        <img src="img/triangle.png?c3567ac48fa872f766a4533d34cd311f" alt="triangle.png">
+                        <img src="img/michelin.png?93736bd3d256def872866c2b10dd5793" alt="michelin.png">
+                        <img src="img/bfgoodrich.png?c087b26bc3079d2cc27429571de6e4fe" alt="bfgoodrich.png">
+                        <img src="img/tigar.png?2390a83c90e0cb063f6052e624fa64d4" alt="tigar.png">
+                        <img src="img/dunlop.png?a1fb8ef3832dd4823f8c203ac53b7693" alt="dunlop.png">
+                        <img src="img/continental.png?f8043f96efbad262fecf184441390839" alt="continental.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../bundle.js"></script>
+</body>
+
+</html>

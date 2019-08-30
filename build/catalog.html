@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <div class="page-wrapper">
+    <header class="main-header">
+      <div class="uk-container">
+        <div class="main-header__top">
+          <a class="main-header__logo" href="/" title="Интернет-магазин шин и дисков">
+            <img src="img/logo.png?e413dda2e61ffdaca8ecef8ce0a57ce3" alt="Интернет-магазин шин и дисков">
+          </a>
+          <nav class="nav-main js-nav-main">
+            <ul class="nav-main__list">
+              <li class="nav-main__item">
+                <a class="nav-main__link" href="/">О компании</a>
+              </li>
+              <li class="nav-main__item">
+                <a class="nav-main__link" href="/">Доставка</a>
+              </li>
+              <li class="nav-main__item">
+                <a class="nav-main__link" href="/">Гарантия</a>
+              </li>
+              <li class="nav-main__item">
+                <a class="nav-main__link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts-block contacts-block_header js-contacts-header">
+            <a class="contacts-block__tel" href="tel: +79264775335">+7 926 477 53 35</a>
+            <div class="contacts-block__social">
+              <a class="contacts-block__social-link" href="#">Viber</a>,
+              <a class="contacts-block__social-link" href="#">Whatsapp</a>
+            </div>
+          </div>
+          <button class="main-header__btn-menu js-menu-open" type="submit" aria-label="Открыть меню">
+            <svg class="main-header__btn-menu-icon" viewBox="0 0 459 459">
+              <path d="M0 382.5h459v-51H0v51zM0 255h459v-51H0v51zM0 76.5v51h459v-51H0z" />
+            </svg>
+          </button>
+          <div class="main-header__store">
+            <div class="main-header__store-links">
+              <a class="main-header__control" href="/">
+                <svg class="main-header__control-icon">
+                  <use xlink:href="../img/sprite.svg#cart" />
+                </svg>
+                Корзина
+              </a>
+              <a class="main-header__control" href="/">
+                <svg class="main-header__control-icon">
+                  <use xlink:href="../img/sprite.svg#user" />
+                </svg>
+                Войти
+              </a>
+            </div>
+            <div class="main-header__store-info">
+              <a class="main-header__cart-link" href="/">4 товара</a> на сумму 42 500
+            </div>
+          </div>
+        </div>
+        <div class="main-header__bottom">
+          <nav class="nav-sections">
+            <ul class="nav-sections__list">
+              <li class="nav-sections__item">
+                <a class="nav-sections__link" href="/">
+                  Шины
+                </a>
+              </li>
+              <li class="nav-sections__item">
+                <a class="nav-sections__link" href="/">
+                  Диски
+                </a>
+              </li>
+              <li class="nav-sections__item">
+                <a class="nav-sections__link" href="/">
+                  Колеса
+                </a>
+              </li>
+              <li class="nav-sections__item">
+                <a class="nav-sections__link" href="/">
+                  Запчасти
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <form class="searchbar searchbar_header js-searchbar">
+            <input class="searchbar__input" type="search" placeholder="Искать по названию" aria-label="Поле поиска"
+              required>
+            <button class="searchbar__submit" type="submit" aria-label="Искать">
+              <svg class="searchbar__submit-icon">
+                <use xlink:href="../img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="menu-adapt ">
+            <div class="menu-adapt__inner js-menu-adapt"></div>
+            <button class="menu-adapt__close-btn js-menu-close" type="button" aria-label="Закрыть меню">
+              <svg class="menu-adapt__close-icon" viewBox="0 0 357 357">
+                <path
+                  d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="uk-container">
+      <ul class="breadcrumb uk-breadcrumb">
+        <li><a href="/">Главная</a></li>
+        <li><span>Шины</span></li>
+      </ul>
+      <main class="catalog">
+        <div class="catalog__inner">
+          <div class="catalog__filters">
+            <form class="catalog-filter">
+              <div class="catalog-filter__row">
+                <label class="select">
+                  <div class="select__label">Производитель</div>
+                  <select class="select__input">
+                    <option>все</option>
+                    <option>не все</option>
+                    <option>505</option>
+                  </select>
+                </label>
+              </div>
+              <div class="catalog-filter__columned-row">
+                <div>
+                  <label class="select">
+                    <div class="select__label">Ширина</div>
+                    <select class="select__input">
+                      <option>205</option>
+                      <option>405</option>
+                      <option>505</option>
+                    </select>
+                  </label>
+                </div>
+                <div>
+                  <label class="select">
+                    <div class="select__label">Профиль</div>
+                    <select class="select__input">
+                      <option>205</option>
+                      <option>405</option>
+                      <option>505</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="catalog-filter__row">
+                <label class="select">
+                  <div class="select__label">Диаметр</div>
+                  <select class="select__input">
+                    <option>205</option>
+                    <option>405</option>
+                    <option>505</option>
+                  </select>
+                </label>
+              </div>
+              <div class="catalog-filter__season-types">
+                <label class="catalog-filter__season-type season-type">
+                  <input class="season-type__input" type="checkbox">
+                  <span class="season-type__label">
+                    <span class="season-type__text">
+                      Лето
+                    </span>
+                    <svg class="season-type__icon">
+                      <use xlink:href="../img/sprite.svg#check"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="catalog-filter__season-type season-type js-season-type-winter">
+                  <input class="season-type__input" type="checkbox">
+                  <span class="season-type__label">
+                    <span class="season-type__text">
+                      Зима
+                    </span>
+                    <svg class="season-type__icon">
+                      <use xlink:href="../img/sprite.svg#check"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="catalog-filter__season-type season-type js-season-type-spikes">
+                  <input class="season-type__input" type="checkbox">
+                  <span class="season-type__label">
+                    <span class="season-type__text">
+                      Шипы
+                    </span>
+                    <svg class="season-type__icon">
+                      <use xlink:href="../img/sprite.svg#check"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <button class="catalog-filter__submit-btn btn btn_action">
+                подобрать
+              </button>
+              <button class="catalog-filter__reset-btn btn btn_default">
+                сбросить
+              </button>
+            </form>
+          </div>
+          <div class="catalog__content">
+            <h1 class="catalog__page-title page-title">Шины</h1>
+            <div class="sort-block">
+              <a href="#">Цена <object data="../img/arrow.svg" type="image/svg+xml"></object></a>
+            </div>
+            <div class="catalog__grid">
+              <div>
+                <div class=" card">
+                  <a class="card__img-wrapper" href="/" tabindex="-1"
+                    title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                    <div class="card__season-type">
+                      <svg class="card__season-type-icon">
+                        <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="/">
+                      Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                    </a>
+                  </h3>
+                  <div class="card__price">
+                    13 500 <span class="rubl">c</span>
+                  </div>
+                  <button class="btn btn_purchase" type="button">В корзину</button>
+                </div>
+              </div>
+              <div>
+                <div class="card">
+                  <a class="card__img-wrapper" href="/" tabindex="-1"
+                    title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                    <div class="card__season-type">
+                      <svg class="card__season-type-icon">
+                        <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="/">
+                      Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                    </a>
+                  </h3>
+                  <div class="card__price">
+                    13 500 <span class="rubl">c</span>
+                  </div>
+                  <button class="btn btn_purchase" type="button">В корзину</button>
+                </div>
+              </div>
+              <div>
+                <div class=" card">
+                  <a class="card__img-wrapper" href="/" tabindex="-1"
+                    title="Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный">
+                    <img src="img/tire.png?cce1be182ce1d0a1f8405d074a14d632" alt="Шина">
+                    <div class="card__season-type">
+                      <svg class="card__season-type-icon">
+                        <use xlink:href=" ../img/sprite.svg#sun"> </use>
+                      </svg>
+                    </div>
+                  </a>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="/">
+                      Диск MW 16012 R16 6,5j 5/114,3 ET45 D60,1 черный
+                    </a>
+                  </h3>
+                  <div class="card__price">
+                    13 500 <span class="rubl">c</span>
+                  </div>
+                  <button class="btn btn_purchase" type="button">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination uk-pagination">
+              <li><a href="">← Предыдущая</a></li>
+              <li class="uk-active"><a href="/">1</a></li>
+              <li><a href="/">2</a></li>
+              <li><a href="/">3</a></li>
+              <li><a href="/">4</a></li>
+              <li><a href="/">5</a></li>
+              <li><a href="">Следующая →</a></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="main-footer">
+      <div class="uk-container">
+        <div class="main-footer__top">
+          <nav class="nav-footer" aria-label="Навигация в футере">
+            <ul class="nav-footer__list">
+              <li class="nav-footer__item">
+                <a class="nav-footer__link" href="/">О компании</a>
+              </li>
+              <li class="nav-footer__item">
+                <a class="nav-footer__link" href="/">Доставка</a>
+              </li>
+              <li class="nav-footer__item">
+                <a class="nav-footer__link" href="/">Гарантия</a>
+              </li>
+              <li class="nav-footer__item">
+                <a class="nav-footer__link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-footer__top-rightside">
+            <div class="main-footer__contacts-block contacts-block contacts-block_footer">
+              <a class="contacts-block__tel" href="tel: +79264775335">+7 926 477 53 35</a>
+              <div class="contacts-block contacts-block_footer">
+                <a class="contacts-block__social-link" href="#">Viber</a>,
+                <a class="contacts-block__social-link" href="#">Whatsapp</a>
+              </div>
+            </div>
+            <button class="btn btn_action">Обратная связь</button>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <ul class="main-footer__policy">
+            <li class="main-footer__policy-item">
+              <a class="main-footer__policy-link">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="main-footer__policy-item">
+              <a class="main-footer__policy-link">
+                Пользовательское соглашение
+              </a>
+            </li>
+          </ul>
+          <a class="main-footer__devs" href="/" title="Разработано в AVS Web">
+            <img class="main-footer__devs-logo" src="img/devs.svg?39afc14a603071bca9df12c85cc0c425" alt="Разработано в AVS Web">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../bundle.js"></script>
+</body>
+
+</html>

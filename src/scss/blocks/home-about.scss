@@ -1,0 +1,37 @@
+.home-about {
+  display: flex;
+  p {
+    margin: 15px 0 10px;
+    line-height: 1.2;
+  }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
+}
+
+.home-about__section-title {
+  margin-bottom: 30px;
+}
+
+.home-about__leftside {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.home-about__leftside {
+  width: 310px;
+  min-width: 310px;
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.home-about__link {
+  margin-top: 25px;
+}
+
+.home-about__banner-link {
+  display: block;
+  margin-top: 45px;
+}
